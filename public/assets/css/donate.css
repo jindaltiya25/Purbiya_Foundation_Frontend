@@ -1,0 +1,816 @@
+/*==========================================
+        DONATE HERO SECTION
+==========================================*/
+
+.gf-donate-section{
+
+    padding:100px 0;
+
+    background:#fff;
+
+}
+
+/* Image */
+
+.gf-donate-image{
+
+    position:relative;
+
+}
+
+.gf-donate-image img{
+
+    width:100%;
+
+    border-radius:25px;
+
+    box-shadow:0 20px 50px rgba(0,0,0,.08);
+
+}
+
+/* Floating Badge */
+
+.gf-donate-badge{
+
+    position:absolute;
+
+    bottom:30px;
+
+    left:30px;
+
+    background:#F15B43;
+
+    color:#fff;
+
+    padding:20px 30px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+
+}
+
+.gf-donate-badge h3{
+
+    margin:0;
+
+    font-size:32px;
+
+    font-weight:700;
+
+}
+
+.gf-donate-badge span{
+
+    font-size:14px;
+
+}
+
+/* Content */
+
+.gf-donate-subtitle{
+
+    color:#F15B43;
+
+    font-weight:600;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    margin-bottom:15px;
+
+}
+
+.gf-donate-title{
+
+    color:#001234;
+
+    font-size:48px;
+
+    font-weight:700;
+
+    margin-bottom:20px;
+
+}
+
+.gf-donate-text{
+
+    color:#666;
+
+    line-height:1.9;
+
+    margin-bottom:30px;
+
+}
+
+/* Feature */
+
+.gf-donate-feature{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    margin-bottom:18px;
+
+    font-weight:500;
+
+    color:#333;
+
+}
+
+.gf-donate-feature i{
+
+    color:#F15B43;
+
+    font-size:18px;
+
+}
+
+/* Button */
+
+.gf-donate-btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    background:#F15B43;
+
+    color:#fff;
+
+    text-decoration:none;
+
+    padding:15px 35px;
+
+    border-radius:50px;
+
+    margin-top:20px;
+
+    transition:.3s;
+
+}
+
+.gf-donate-btn:hover{
+
+    background:#001234;
+
+    color:#fff;
+
+}
+
+.gf-donate-btn i{
+
+    transition:.3s;
+
+}
+
+.gf-donate-btn:hover i{
+
+    transform:translateX(5px);
+
+}
+/*==========================================
+        DONATION AMOUNT
+==========================================*/
+
+.gf-amount-section{
+
+    padding:100px 0;
+
+    background:#F8FAFC;
+
+}
+
+/* Heading */
+
+.gf-amount-subtitle{
+
+    color:#F15B43;
+
+    font-weight:600;
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:8px;
+
+}
+
+.gf-amount-title{
+
+    color:#001234;
+
+    font-size:45px;
+
+    font-weight:700;
+
+    margin:18px 0;
+
+}
+
+.gf-amount-text{
+
+    color:#666;
+
+}
+
+/* Amount Card */
+
+.gf-amount-card{
+
+    background:#fff;
+
+    height:120px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border-radius:20px;
+
+    font-size:28px;
+
+    font-weight:700;
+
+    color:#001234;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+}
+
+.gf-amount-card:hover{
+
+    transform:translateY(-8px);
+
+    background:#F15B43;
+
+    color:#fff;
+
+}
+
+/* Active Card */
+
+.gf-amount-card.active{
+
+    background:#F15B43;
+
+    color:#fff;
+
+}
+
+/* Custom Amount */
+
+.gf-custom-amount{
+
+    height:60px;
+
+    border-radius:50px;
+
+    padding:0 25px;
+
+    border:1px solid #ddd;
+
+    box-shadow:none;
+
+}
+
+.gf-custom-amount:focus{
+
+    border-color:#F15B43;
+
+    box-shadow:none;
+
+}
+
+/*==========================================
+        DONATION FORM
+==========================================*/
+
+.gf-donation-form-section{
+
+    padding:100px 0;
+
+    background:#ffffff;
+
+}
+
+/* Form Box */
+
+.gf-donation-form-box,
+
+.gf-payment-box{
+
+    background:#ffffff;
+
+    border-radius:25px;
+
+    padding:40px;
+
+    box-shadow:0 20px 50px rgba(0,0,0,.08);
+
+}
+
+.gf-form-subtitle{
+
+    color:#F15B43;
+
+    font-weight:600;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    margin-bottom:15px;
+
+}
+
+.gf-form-title{
+
+    color:#001234;
+
+    font-size:40px;
+
+    font-weight:700;
+
+    margin-bottom:35px;
+
+}
+
+/* Inputs */
+
+.gf-form-input{
+
+    height:58px;
+
+    border-radius:12px;
+
+    border:1px solid #e6e6e6;
+
+    margin-bottom:20px;
+
+    box-shadow:none;
+
+    padding:15px;
+
+}
+
+textarea.gf-form-input{
+
+    height:auto;
+
+    resize:none;
+
+}
+
+.gf-form-input:focus{
+
+    border-color:#F15B43;
+
+    box-shadow:none;
+
+}
+
+/* Button */
+
+.gf-donate-submit{
+
+    width:100%;
+
+    height:58px;
+
+    border:none;
+
+    border-radius:50px;
+
+    background:#F15B43;
+
+    color:#fff;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.gf-donate-submit:hover{
+
+    background:#001234;
+
+}
+
+/*==========================================
+        PAYMENT METHODS
+==========================================*/
+
+.gf-payment-title{
+
+    color:#001234;
+
+    font-weight:700;
+
+    margin-bottom:30px;
+
+}
+
+.gf-payment-card{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+    padding:20px;
+
+    border-radius:18px;
+
+    border:1px solid #eee;
+
+    margin-bottom:18px;
+
+    transition:.3s;
+
+    cursor:pointer;
+
+}
+
+.gf-payment-card:hover{
+
+    border-color:#F15B43;
+
+    transform:translateY(-5px);
+
+}
+
+.gf-payment-card i{
+
+    width:60px;
+
+    height:60px;
+
+    background:#FFF1EE;
+
+    color:#F15B43;
+
+    border-radius:15px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:26px;
+
+}
+
+.gf-payment-card h5{
+
+    margin-bottom:5px;
+
+    color:#001234;
+
+}
+
+.gf-payment-card p{
+
+    margin:0;
+
+    color:#666;
+
+}
+
+/* Security */
+
+.gf-payment-security{
+
+    margin-top:30px;
+
+    background:#F8FAFC;
+
+    border-radius:15px;
+
+    padding:18px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    color:#001234;
+
+    font-weight:600;
+
+}
+
+.gf-payment-security i{
+
+    color:#28a745;
+
+    font-size:22px;
+
+}
+
+/* Responsive */
+
+@media(max-width:991px){
+
+.gf-payment-box{
+
+margin-top:30px;
+
+}
+
+}
+
+@media(max-width:576px){
+
+.gf-donation-form-box,
+
+.gf-payment-box{
+
+padding:25px;
+
+}
+
+.gf-form-title{
+
+font-size:30px;
+
+}
+
+}
+
+/*==========================================
+        FAQ
+==========================================*/
+
+.gf-donate-faq{
+
+    padding:100px 0;
+
+}
+
+.gf-faq-item{
+
+    border:none;
+
+    margin-bottom:20px;
+
+    border-radius:15px !important;
+
+    overflow:hidden;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+}
+
+.accordion-button{
+
+    font-weight:600;
+
+    color:#001234;
+
+    box-shadow:none !important;
+
+}
+
+.accordion-button:not(.collapsed){
+
+    background:#F15B43;
+
+    color:#fff;
+
+}
+
+/*==========================================
+        IMPACT
+==========================================*/
+
+.gf-impact-section{
+
+    padding:80px 0;
+
+    background:#001234;
+
+}
+
+.gf-impact-card{
+
+    color:#fff;
+
+}
+
+.gf-impact-card h2{
+
+    font-size:48px;
+
+    font-weight:700;
+
+    color:#F15B43;
+
+}
+
+.gf-impact-card p{
+
+    margin-top:10px;
+
+}
+
+/*==========================================
+        FAQ
+==========================================*/
+
+.gf-donate-faq{
+
+    padding:100px 0;
+
+}
+
+.gf-faq-item{
+
+    border:none;
+
+    margin-bottom:20px;
+
+    border-radius:15px !important;
+
+    overflow:hidden;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+}
+
+.accordion-button{
+
+    font-weight:600;
+
+    color:#001234;
+
+    box-shadow:none !important;
+
+}
+
+.accordion-button:not(.collapsed){
+
+    background:#F15B43;
+
+    color:#fff;
+
+}
+
+/*==========================================
+        IMPACT
+==========================================*/
+
+.gf-impact-section{
+
+    padding:80px 0;
+
+    background:#001234;
+
+}
+
+.gf-impact-card{
+
+    color:#fff;
+
+}
+
+.gf-impact-card h2{
+
+    font-size:48px;
+
+    font-weight:700;
+
+    color:#F15B43;
+
+}
+
+.gf-impact-card p{
+
+    margin-top:10px;
+
+}
+
+/*==========================================
+        THANK YOU
+==========================================*/
+
+.gf-thankyou-section{
+
+    padding:100px 0;
+
+}
+
+.gf-thankyou-box{
+
+    background:linear-gradient(rgba(0,18,52,.9),rgba(0,18,52,.9)),
+
+    url(images/donate-banner.jpg);
+
+    background-size:cover;
+
+    background-position:center;
+
+    border-radius:25px;
+
+    padding:80px;
+
+    text-align:center;
+
+    color:#fff;
+
+}
+
+.gf-thankyou-box h2{
+
+    font-size:48px;
+
+    font-weight:700;
+
+}
+
+.gf-thankyou-box p{
+
+    max-width:650px;
+
+    margin:25px auto;
+
+    line-height:1.8;
+
+}
+
+.gf-thankyou-btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    background:#F15B43;
+
+    color:#fff;
+
+    text-decoration:none;
+
+    padding:15px 40px;
+
+    border-radius:50px;
+
+    transition:.3s;
+
+}
+
+.gf-thankyou-btn:hover{
+
+    background:#fff;
+
+    color:#001234;
+
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.gf-impact-card{
+
+margin-bottom:35px;
+
+}
+
+.gf-thankyou-box{
+
+padding:50px 25px;
+
+}
+
+.gf-thankyou-box h2{
+
+font-size:32px;
+
+}
+
+}

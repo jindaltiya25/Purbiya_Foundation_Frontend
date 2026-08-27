@@ -1,0 +1,276 @@
+/*==========================================
+            VOLUNTEER SECTION
+==========================================*/
+
+.gf-volunteer{
+
+    padding:100px 0;
+
+}
+
+.gf-volunteer-subtitle{
+
+    color:#F15B43;
+
+    font-weight:600;
+
+    text-transform:uppercase;
+
+    letter-spacing:1px;
+
+}
+
+.gf-volunteer-title{
+
+    font-size:45px;
+
+    color:#001234;
+
+    font-weight:700;
+
+    margin:20px 0;
+
+}
+
+.gf-volunteer-text{
+
+    max-width:650px;
+
+    margin:auto;
+
+    color:#6c757d;
+
+}
+
+.gf-volunteer-card{
+
+    /* background:#fff; */
+    width: 70%;
+
+    justify-content: center;
+    
+   
+
+    overflow:hidden;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+    transition:.4s;
+/* 
+    border:5px solid #F15B43; */
+
+}
+
+.gf-volunteer-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.gf-volunteer-image{
+
+    position:relative;
+
+    overflow:hidden;
+
+    padding: 15px 0px 15px 15px;
+    left:1%;
+
+}
+
+.gf-volunteer-image img{
+
+    width:100%;
+
+    /* height:300px;  */
+
+    object-fit:cover;
+
+    transition:.5s;
+
+}
+
+.gf-volunteer-card:hover img{
+
+    transform:scale(1.08);
+
+}
+
+.gf-volunteer-role{
+
+    color:#F15B43;
+
+    font-size:16px;
+
+    font-weight: bold;
+
+    padding: 0px;
+}
+
+.gf-volunteer-body{
+
+    padding:0px 30px;
+
+}
+
+.gf-volunteer-body h4{
+
+    color:#001234;
+
+    font-weight:700;
+
+}
+
+.gf-volunteer-body p{
+
+    color:#666;
+
+    margin:15px 0;
+
+}
+
+
+.gf-volunteer-body i{
+
+    color:#F15B43;
+
+    margin-right:10px;
+
+}
+
+.gf-volunteer-btn{
+
+    display:inline-block;
+
+    margin-top:20px;
+
+    background:#001234;
+
+    color:#fff;
+
+    padding:12px 30px;
+
+    border-radius:50px;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+.gf-volunteer-btn:hover{
+
+    background:#F15B43;
+
+    color:#fff;
+
+}
+/*==========================================
+        VOLUNTEER SOCIAL
+==========================================*/
+
+.gf-volunteer-image{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+/* Social Container */
+
+.gf-volunteer-social{
+
+    position:absolute;
+
+    left:50%;
+
+    bottom:-70px;
+
+    transform:translateX(-50%);
+
+    display:flex;
+
+    gap:12px;
+
+    transition:.4s;
+
+}
+
+/* Show on Hover */
+
+.gf-volunteer-card:hover .gf-volunteer-social{
+
+    bottom:25px;
+
+}
+
+/* Social Links */
+
+.gf-volunteer-social a{
+
+    width:30px;
+
+    height:30px;
+
+    border-radius:50%;
+
+    background:#ffffff;
+
+    color:#001234;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-decoration:none;
+
+    font-size:14px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+
+    transition:.3s;
+
+}
+
+/* Facebook */
+
+.gf-volunteer-social a:nth-child(1):hover{
+
+    background:#1877F2;
+
+    color:#fff;
+
+}
+
+/* Instagram */
+
+.gf-volunteer-social a:nth-child(2):hover{
+
+    background:#E4405F;
+
+    color:#fff;
+
+}
+
+/* WhatsApp */
+
+.gf-volunteer-social a:nth-child(3):hover{
+
+    background:#25D366;
+
+    color:#fff;
+
+}
+
+/* YouTube */
+
+.gf-volunteer-social a:nth-child(4):hover{
+
+    background:#FF0000;
+
+    color:#fff;
+
+}

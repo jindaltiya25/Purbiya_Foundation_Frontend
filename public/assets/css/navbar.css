@@ -1,0 +1,183 @@
+/*======================
+TOP BAR
+=======================*/
+
+.top-bar {
+    background: #001234;
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+.top-bar a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 15px;
+    transition: .3s;
+}
+
+.top-bar span {
+    color: #ffffff80;
+    margin-right: 15px;
+}
+
+.top-bar i {
+    color: #F15B43;
+    margin-right: 6px;
+}
+
+.top-bar a:hover {
+    color: #F15B43;
+}
+
+/*======================
+NAVBAR
+=======================*/
+
+.custom-navbar {
+    background: #fff;
+    padding: 16px 0;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, .08);
+}
+
+.navbar-brand {
+    color: #001234;
+    font-size: 28px;
+}
+
+.navbar-brand:hover {
+    color: #001234;
+}
+
+.navbar-nav .nav-link {
+
+    color: #001234;
+    font-weight: 600;
+    margin: 0 12px;
+    position: relative;
+    transition: .3s;
+}
+
+.navbar-nav .nav-link::after {
+
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+
+    width: 0%;
+    height: 2px;
+
+    background: #F15B43;
+
+    transition: .3s;
+
+}
+
+.navbar-nav .nav-link:hover {
+
+    color: #F15B43;
+
+}
+
+.navbar-nav .nav-link:hover::after {
+
+    width: 100%;
+
+}
+
+.navbar-nav .active {
+
+    color: #F15B43 !important;
+
+}
+
+.navbar-nav .active::after {
+
+    width: 100%;
+
+}
+
+/*======================
+BUTTON
+=======================*/
+
+.donate-btn {
+
+    background: #F15B43;
+    color: #fff;
+    padding: 12px 28px;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: .3s;
+
+}
+
+.donate-btn:hover {
+
+    background: #fff;
+    color: #fff;
+    border: 1px solid #F15B43;
+    border-radius: 30px;
+
+}
+
+/*======================
+SOCIAL
+=======================*/
+
+.top-bar .text-md-end a {
+
+    margin-left: 12px;
+    margin-right: 0;
+    font-size: 17px;
+
+}
+
+/*======================
+RESPONSIVE
+=======================*/
+
+@media(max-width:991px) {
+
+    .custom-navbar {
+
+        padding: 12px 0;
+
+    }
+
+    .navbar-nav {
+
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    .navbar-nav .nav-link {
+
+        margin: 10px 0;
+
+    }
+
+    .donate-btn {
+
+        display: block;
+        text-align: center;
+
+    }
+
+}
+
+@media(max-width:767px) {
+
+    .top-bar {
+
+        text-align: center;
+
+    }
+
+    .top-bar .text-md-end {
+
+        margin-top: 8px;
+
+    }
+
+}

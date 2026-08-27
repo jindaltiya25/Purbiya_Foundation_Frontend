@@ -1,0 +1,439 @@
+/*==========================================
+            CONTACT SECTION
+==========================================*/
+
+.gf-contact-section{
+
+    padding:100px 0;
+
+    background:#ffffff;
+
+}
+
+/* Section Heading */
+
+.gf-contact-subtitle{
+
+    color:#F15B43;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    margin-bottom:15px;
+
+}
+
+.gf-contact-title{
+
+    color:#001234;
+
+    font-size:52px;
+
+    font-weight:700;
+
+    margin-bottom:20px;
+
+}
+
+.gf-contact-description{
+
+    color:#6c757d;
+
+    line-height:1.8;
+
+    max-width:700px;
+
+    margin:auto;
+
+}
+
+/*==========================================
+        LEFT CONTACT CARD
+==========================================*/
+
+.gf-contact-left{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:25px;
+
+}
+
+.gf-contact-card{
+
+    background:#ffffff;
+
+    border-radius:20px;
+
+    padding:28px;
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:20px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+    transition:.4s;
+
+}
+
+.gf-contact-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.gf-contact-icon{
+
+    width:65px;
+
+    height:65px;
+
+    border-radius:18px;
+
+    background:#FFF1EE;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    flex-shrink:0;
+
+    transition:.4s;
+
+}
+
+.gf-contact-icon i{
+
+    color:#F15B43;
+
+    font-size:28px;
+
+}
+
+.gf-contact-card:hover .gf-contact-icon{
+
+    background:#F15B43;
+
+}
+
+.gf-contact-card:hover .gf-contact-icon i{
+
+    color:#ffffff;
+
+}
+
+.gf-contact-card h5{
+
+    color:#001234;
+
+    margin-bottom:8px;
+
+    font-weight:700;
+
+}
+
+.gf-contact-card p{
+
+    margin-bottom:4px;
+
+    color:#6c757d;
+
+}
+
+/*==========================================
+        SOCIAL ICONS
+==========================================*/
+
+.gf-contact-social{
+
+    display:flex;
+
+    gap:15px;
+
+    margin-top:10px;
+
+}
+
+.gf-contact-social a{
+
+    width:48px;
+
+    height:48px;
+
+    border-radius:50%;
+
+    background:#ffffff;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    color:#001234;
+
+    text-decoration:none;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.gf-contact-social a:hover{
+
+    background:#F15B43;
+
+    color:#ffffff;
+
+    transform:translateY(-5px);
+
+}
+
+/*==========================================
+            FORM BOX
+==========================================*/
+
+.gf-contact-form-box{
+
+    background:#ffffff;
+
+    padding:45px;
+
+    border-radius:25px;
+
+    box-shadow:0 20px 50px rgba(0,0,0,.08);
+
+}
+
+.gf-contact-form-box h3{
+
+    color:#001234;
+
+    font-weight:700;
+
+    margin-bottom:30px;
+
+}
+
+.gf-contact-input{
+
+    height:58px;
+
+    border:1px solid #e5e5e5;
+
+    border-radius:12px;
+
+    margin-bottom:20px;
+
+    padding:15px 18px;
+
+    box-shadow:none !important;
+
+}
+
+textarea.gf-contact-input{
+
+    height:auto;
+
+    resize:none;
+
+    padding-top:18px;
+
+}
+
+.gf-contact-input:focus{
+
+    border-color:#F15B43;
+
+}
+
+/*==========================================
+            BUTTON
+==========================================*/
+
+.gf-contact-btn{
+
+    background:#F15B43;
+
+    color:#ffffff;
+
+    border:none;
+
+    border-radius:50px;
+
+    padding:15px 40px;
+
+    font-weight:600;
+
+    transition:.4s;
+
+}
+
+.gf-contact-btn i{
+
+    margin-left:8px;
+
+    transition:.4s;
+
+}
+
+.gf-contact-btn:hover{
+
+    background:#001234;
+
+}
+
+.gf-contact-btn:hover i{
+
+    transform:translateX(5px);
+
+}
+
+/*==========================================
+            GOOGLE MAP
+==========================================*/
+
+.gf-map-section{
+
+    padding-bottom:100px;
+
+}
+
+.gf-map-box{
+
+    overflow:hidden;
+
+    border-radius:25px;
+
+    box-shadow:0 20px 50px rgba(0,0,0,.08);
+
+}
+
+.gf-map-box iframe{
+
+    width:100%;
+
+    height:500px;
+
+    border:0;
+
+}
+
+/*==========================================
+            RESPONSIVE
+==========================================*/
+
+@media(max-width:991px){
+
+.gf-contact-section{
+
+padding:80px 0;
+
+}
+
+.gf-contact-title{
+
+font-size:42px;
+
+}
+
+.gf-contact-form-box{
+
+margin-top:20px;
+
+padding:35px;
+
+}
+
+}
+
+@media(max-width:767px){
+
+.gf-contact-title{
+
+font-size:34px;
+
+}
+
+.gf-contact-form-box{
+
+padding:30px;
+
+}
+
+.gf-contact-card{
+
+padding:22px;
+
+}
+
+.gf-map-box iframe{
+
+height:400px;
+
+}
+
+}
+
+@media(max-width:576px){
+
+.gf-contact-section{
+
+padding:70px 0;
+
+}
+
+.gf-contact-title{
+
+font-size:28px;
+
+line-height:1.3;
+
+}
+
+.gf-contact-form-box{
+
+padding:25px;
+
+}
+
+.gf-contact-input{
+
+height:55px;
+
+}
+
+.gf-contact-btn{
+
+width:100%;
+
+}
+
+.gf-contact-social{
+
+justify-content:center;
+
+}
+
+.gf-map-box iframe{
+
+height:300px;
+
+}
+
+}

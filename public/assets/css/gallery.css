@@ -1,0 +1,504 @@
+/*==========================================
+            GALLERY SECTION
+==========================================*/
+
+.gf-gallery-section{
+
+    padding:100px 0;
+
+    background:#ffffff;
+
+}
+
+/* Section Heading */
+
+.gf-gallery-subtitle{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    color:#F15B43;
+
+    font-weight:600;
+
+    text-transform:uppercase;
+
+    letter-spacing:1px;
+
+    margin-bottom:15px;
+
+}
+
+.gf-gallery-title{
+
+    color:#001234;
+
+    font-size:48px;
+
+    font-weight:700;
+
+    margin-bottom:20px;
+
+}
+
+.gf-gallery-description{
+
+    max-width:700px;
+
+    margin:auto;
+
+    color:#6c757d;
+
+    line-height:1.8;
+
+}
+
+/*==========================================
+            FILTER BUTTONS
+==========================================*/
+
+.gf-gallery-filter{
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:15px;
+
+    margin:60px 0;
+
+}
+
+.gf-gallery-btn{
+
+    padding:12px 28px;
+
+    border:none;
+
+    border-radius:50px;
+
+    background:#F7F7F7;
+
+    color:#001234;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.gf-gallery-btn:hover,
+
+.gf-gallery-btn.active{
+
+    background:#F15B43;
+
+    color:#ffffff;
+
+}
+
+/*==========================================
+            MASONRY GRID
+==========================================*/
+
+.gf-gallery-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:25px;
+
+}
+
+/* Gallery Item */
+
+.gf-gallery-item{
+
+    position:relative;
+
+    overflow:hidden;
+
+    border-radius:20px;
+
+    cursor:pointer;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+    transition:.4s ease;
+
+    opacity:1;
+
+    transform:scale(1);
+
+}
+
+/* Different Heights */
+
+.gf-gallery-item:nth-child(1){
+
+    height:280px;
+
+}
+
+.gf-gallery-item:nth-child(2){
+
+    height:430px;
+
+}
+
+.gf-gallery-item:nth-child(3){
+
+    height:350px;
+
+}
+
+.gf-gallery-item:nth-child(4){
+
+    height:250px;
+
+}
+
+.gf-gallery-item:nth-child(5){
+
+    height:420px;
+
+}
+
+.gf-gallery-item:nth-child(6){
+
+    height:320px;
+
+}
+
+/* Image */
+
+.gf-gallery-item img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    transition:.6s;
+
+}
+
+/* Hover Zoom */
+
+.gf-gallery-item:hover img{
+
+    transform:scale(1.12);
+
+}
+
+/*==========================================
+            OVERLAY
+==========================================*/
+
+.gf-gallery-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:linear-gradient(
+
+        to top,
+
+        rgba(0,18,52,.50),
+
+        rgba(0,18,52,.10)
+
+    );
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:flex-end;
+
+    padding:30px;
+
+    opacity:0;
+
+    transition:.4s;
+
+}
+
+.gf-gallery-item:hover .gf-gallery-overlay{
+
+    opacity:1;
+
+}
+
+/* Overlay Text */
+
+.gf-gallery-overlay h5{
+
+    color:#ffffff;
+
+    font-weight:700;
+
+    margin-bottom:8px;
+
+}
+
+.gf-gallery-overlay p{
+
+    color:#dddddd;
+
+    margin-bottom:20px;
+
+}
+
+/* Zoom Icon */
+
+.gf-gallery-view{
+
+    width:55px;
+
+    height:55px;
+
+    border-radius:50%;
+
+    background:#F15B43;
+
+    color:#ffffff;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:22px;
+
+    transform:translateY(40px);
+
+    transition:.4s;
+
+}
+
+.gf-gallery-item:hover .gf-gallery-view{
+
+    transform:translateY(0);
+
+}
+
+/*==========================================
+            RESPONSIVE
+==========================================*/
+
+@media(max-width:991px){
+
+.gf-gallery-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.gf-gallery-title{
+
+font-size:38px;
+
+}
+
+}
+
+@media(max-width:767px){
+
+.gf-gallery-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.gf-gallery-item{
+
+height:320px !important;
+
+
+}
+
+}
+
+@media(max-width:576px){
+
+.gf-gallery-section{
+
+padding:70px 0;
+
+}
+
+.gf-gallery-title{
+
+font-size:30px;
+
+}
+
+.gf-gallery-filter{
+
+gap:10px;
+
+margin:40px 0;
+
+}
+
+.gf-gallery-btn{
+
+padding:10px 18px;
+
+font-size:14px;
+
+}
+
+}
+
+/*==========================================
+            LIGHTBOX
+==========================================*/
+
+.gf-lightbox{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.92);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:.4s;
+
+    z-index:9999;
+
+}
+
+.gf-lightbox.active{
+
+    opacity:1;
+
+    visibility:visible;
+
+}
+
+/* Image */
+
+.gf-lightbox-image{
+
+    max-width:85%;
+
+    max-height:85vh;
+
+    border-radius:20px;
+
+    box-shadow:0 20px 60px rgba(0,0,0,.4);
+
+    animation:gfZoom .35s;
+
+}
+
+/* Zoom Animation */
+
+@keyframes gfZoom{
+
+    from{
+
+        transform:scale(.7);
+
+        opacity:0;
+
+    }
+
+    to{
+
+        transform:scale(1);
+
+        opacity:1;
+
+    }
+
+}
+
+/* Controls */
+
+.gf-lightbox-close,
+
+.gf-lightbox-prev,
+
+.gf-lightbox-next{
+
+    position:absolute;
+
+    width:55px;
+
+    height:55px;
+
+    border-radius:50%;
+
+    background:#ffffff;
+
+    color:#001234;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    cursor:pointer;
+
+    font-size:22px;
+
+    transition:.3s;
+
+}
+
+.gf-lightbox-close:hover,
+
+.gf-lightbox-prev:hover,
+
+.gf-lightbox-next:hover{
+
+    background:#F15B43;
+
+    color:#fff;
+
+}
+
+/* Positions */
+
+.gf-lightbox-close{
+
+    top:30px;
+
+    right:40px;
+
+}
+
+.gf-lightbox-prev{
+
+    left:40px;
+
+}
+
+.gf-lightbox-next{
+
+    right:40px;
+
+}
