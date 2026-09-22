@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,41 +13,43 @@
 
     <link rel="stylesheet" href="/assets/css/style.css">
 </head>
+
 <body>
     <div id="navbar"></div>
 
     <div id="blogContainer"></div>
-    
+
     <div id="footer"></div>
 
-    document.addEventListener("DOMContentLoaded", () => {
-    loadBlogs();
-});
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            loadBlogs();
+        });
 
-async function loadBlogs() {
+        async function loadBlogs() {
 
-    try {
+            try {
 
-        const response = await fetch("/api/blogs");
-        const result = await response.json();
+                const response = await fetch("/api/blogs");
+                const result = await response.json();
 
-        if (!result.success) {
-            console.error(result.message);
-            return;
-        }
+                if (!result.success) {
+                    console.error(result.message);
+                    return;
+                }
 
-        const blogContainer =
-            document.getElementById("blogContainer");
+                const blogContainer =
+                    document.getElementById("blogContainer");
 
-        blogContainer.innerHTML = "";
+                blogContainer.innerHTML = "";
 
-        result.data.forEach(blog => {
+                result.data.forEach(blog => {
 
-            const card = document.createElement("div");
+                    const card = document.createElement("div");
 
-            card.className = "col-lg-4 col-md-6";
+                    card.className = "col-lg-4 col-md-6";
 
-            card.innerHTML = `
+                    card.innerHTML = `
                 <div class="blog-card">
 
                     <img
@@ -77,18 +80,22 @@ async function loadBlogs() {
                 </div>
             `;
 
-            blogContainer.appendChild(card);
+                    blogContainer.appendChild(card);
 
-        });
+                });
 
-    } catch (error) {
+            } catch (error) {
 
-        console.error("Blogs loading error:", error);
+                console.error("Blogs loading error:", error);
 
-    }
+            }
 
-}
+        }
+    </script>
+
+
 
     <script src="/assets/js/include.js"></script>
 </body>
+
 </html>

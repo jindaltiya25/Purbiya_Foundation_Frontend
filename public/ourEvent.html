@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,42 +13,44 @@
 
     <link rel="stylesheet" href="/assets/css/style.css">
 </head>
+
 <body>
     <div id="navbar"></div>
 
 
     <div id="eventContainer"></div>
-    
+
     <div id="footer"></div>
 
-    document.addEventListener("DOMContentLoaded", () => {
-    loadEvents();
-});
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            loadEvents();
+        });
 
-async function loadEvents() {
+        async function loadEvents() {
 
-    try {
+            try {
 
-        const response = await fetch("/api/events");
-        const result = await response.json();
+                const response = await fetch("/api/events");
+                const result = await response.json();
 
-        if (!result.success) {
-            console.error(result.message);
-            return;
-        }
+                if (!result.success) {
+                    console.error(result.message);
+                    return;
+                }
 
-        const eventContainer =
-            document.getElementById("eventContainer");
+                const eventContainer =
+                    document.getElementById("eventContainer");
 
-        eventContainer.innerHTML = "";
+                eventContainer.innerHTML = "";
 
-        result.data.forEach(event => {
+                result.data.forEach(event => {
 
-            const card = document.createElement("div");
+                    const card = document.createElement("div");
 
-            card.className = "col-lg-4 col-md-6";
+                    card.className = "col-lg-4 col-md-6";
 
-            card.innerHTML = `
+                    card.innerHTML = `
                 <div class="event-card">
 
                     <img
@@ -78,18 +81,21 @@ async function loadEvents() {
                 </div>
             `;
 
-            eventContainer.appendChild(card);
+                    eventContainer.appendChild(card);
 
-        });
+                });
 
-    } catch (error) {
+            } catch (error) {
 
-        console.error("Events loading error:", error);
+                console.error("Events loading error:", error);
 
-    }
+            }
 
-}
+        }
+
+    </script>
 
     <script src="/assets/js/include.js"></script>
 </body>
+
 </html>
